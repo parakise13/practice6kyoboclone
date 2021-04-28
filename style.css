@@ -1,0 +1,323 @@
+:root {
+  /*color*/
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #5e6b9e;
+  --blue-light-color: #e1e9ee;
+  --green-color: #6eb327;
+  --grey-light-color: #f3f3f3;
+  --blue-dark-color: #353f67;
+  --grey-dark-color: #909090;
+
+  /*size*/
+  --padding: 12px;
+
+  /* font-size*/
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+button,
+button:hover {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding: var(--padding);
+}
+
+.logoAndBtn {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo .kyobo {
+  font-size: var(--font-medium);
+  font-weight: 700;
+}
+.logo .kyoboKor {
+  font-size: var(--font-small);
+  font-weight: 500;
+}
+.logo i {
+  color: var(--green-color);
+}
+
+.moreBtn {
+  font-size: var(--font-large);
+  padding-left: var(--padding);
+}
+.searchBox {
+  position: relative;
+  width: 60%;
+}
+.searchBox i {
+  position: absolute;
+  right: 0;
+  padding: calc(var(--padding) / 2);
+  margin-right: calc(var(--padding) / 2);
+}
+
+.searchBox input {
+  width: 100%;
+  padding: calc(var(--padding) / 2);
+  background-color: var(--blue-dark-color);
+  border: none;
+  border-radius: 20px;
+}
+
+input::placeholder {
+  color: var(--white-color);
+  margin-left: var(--padding);
+}
+
+.shoppingcart {
+  font-size: 20px;
+  margin-right: var(--padding);
+  color: var(--white-color);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--blue-color);
+  padding: var(--padding) 0;
+  border-radius: 0 0 20px 20px;
+}
+
+.navbar .menu li {
+  margin-bottom: calc(var(--padding) * 2);
+}
+
+.navbar .menu a {
+  color: var(--white-color);
+  font-size: 15px;
+}
+
+.adAndBigicons {
+  background-color: var(--white-color);
+}
+.ad {
+  display: flex;
+  padding: var(--padding);
+  padding-bottom: 0;
+  background-color: var(--green-color);
+  border-radius: 10px;
+}
+
+.ad .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.ad .image {
+  flex: 1 1 30%;
+  padding-left: calc(var(--padding) * 3);
+  padding-top: var(--padding);
+}
+
+.ad .adtitle {
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+  padding-top: 40px;
+  color: var(--white-color);
+}
+
+.ad .adtitle .big {
+  font-size: 20px;
+  font-weight: 750;
+  padding-bottom: var(--padding);
+}
+.ad .adtitle .small {
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: var(--padding);
+}
+
+.ad i {
+  flex: 1 1 5%;
+  font-size: 25px;
+  color: var(--white-color);
+  padding-top: 100px;
+  padding-right: calc(var(--padding) / 2);
+}
+.adbox {
+  padding: 0 var(--padding);
+  padding-top: calc(var(--padding) * 1.5);
+  border-left: 5px solid var(--grey-light-color);
+  border-right: 5px solid var(--grey-light-color);
+}
+
+.bigIcons {
+  padding-top: calc(var(--padding) * 2);
+  border-bottom: 12px solid var(--grey-light-color);
+  border-left: 5px solid var(--grey-light-color);
+  border-right: 5px solid var(--grey-light-color);
+}
+
+.bigIcons ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bigIcons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bigIcons i {
+  font-size: 35px;
+  padding: calc(var(--padding) * 2);
+  border-radius: 35%;
+  margin-bottom: var(--padding);
+  background-color: var(--grey-light-color);
+}
+
+.bigIcons .bigIconsBtn i:hover {
+  background-color: var(--blue-light-color);
+}
+
+.bigIcons .bigIconsBtn {
+  padding-bottom: var(--padding);
+}
+.listIcons button:hover,
+.bigIcons .bigIconsBtn:hover {
+  color: var(--blue-color);
+}
+
+.listIcons {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 3px solid var(--grey-light-color);
+}
+
+.listIcons button {
+  padding: var(--padding);
+  font-size: 20px;
+  color: var(--grey-dark-color);
+}
+
+.booklist .item .bookimgAndContents {
+  display: flex;
+  padding: var(--padding);
+}
+.booklist .item {
+  margin: var(--padding);
+}
+.booklist .item .bookimgAndContents img {
+  width: 100%;
+  height: 100%;
+}
+
+.booklist .item .bookimgAndContents .bookimage {
+  flex: 1 1 40%;
+}
+.booklist .item .bookimgAndContents .contents {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--padding);
+}
+.booklist .item .bookimgAndContents .contents .number {
+  background-color: var(--blue-color);
+  border-radius: 10%;
+  color: var(--white-color);
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  padding: 2px;
+  margin-bottom: 12px;
+}
+.booklist .item .bookimgAndContents .contents .name {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.booklist .item .bookimgAndContents .contents .writer,
+.booklist .item .bookimgAndContents .contents .company,
+.booklist .item .bookimgAndContents .bonus {
+  color: var(--grey-dark-color);
+  font-size: var(--font-medium);
+  padding: 2px;
+  font-weight: 550;
+}
+.booklist .item .bookimgAndContents .contents .company {
+  margin-bottom: 10px;
+}
+.booklist .item .bookimgAndContents .price {
+  padding-bottom: 5px;
+}
+.booklist .item .bookimgAndContents .price .save {
+  color: var(--green-color);
+  font-size: 16px;
+  font-weight: 900;
+  padding-right: 5px;
+}
+.booklist .item .bookimgAndContents .price .priceNumber {
+  font-size: 16px;
+  font-weight: 900;
+}
+.booklist .item .bookimgAndContents .price .kor {
+  font-size: var(--font-small);
+  font-weight: 900;
+}
+
+.booklist .item .purchase {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 1;
+}
+
+.booklist .item .purchase .put {
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
+  width: 100%;
+  padding: var(--padding);
+  margin: calc(var(--padding) / 8);
+}
+
+.booklist .item .purchase .purchase2 {
+  border: 2px solid var(--blue-color);
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  width: 100%;
+  padding: var(--padding);
+  margin: calc(var(--padding) / 8);
+}
